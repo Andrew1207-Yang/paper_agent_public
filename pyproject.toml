@@ -1,0 +1,12 @@
+[project]
+name = "paper-agent"
+version = "0.1.0"
+description = "Local markdown-first dashboard for reading and managing research papers."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=3.0.3",
+    "plotly>=6.7.0",
+    "pyyaml>=6.0.3",
+    "streamlit>=1.58.0",
+]
