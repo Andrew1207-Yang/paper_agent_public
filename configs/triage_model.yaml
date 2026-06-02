@@ -1,0 +1,27 @@
+provider: "openrouter"
+
+retry:
+  max_attempts: 3
+  sleep_seconds: 10
+
+fallback:
+  enabled: false
+
+providers:
+  openrouter:
+    base_url: "https://openrouter.ai/api/v1"
+    api_key_env: "OPENROUTER_API_KEY"
+    default_model: "google/gemma-4-26b-a4b-it:free"
+    fallback_models:
+      - "moonshotai/kimi-k2.6:free"
+      - "z-ai/glm-4.5-air:free"
+    site_url_env: "OPENROUTER_SITE_URL"
+    app_name_env: "OPENROUTER_APP_NAME"
+
+  nvidia:
+    base_url: "https://integrate.api.nvidia.com/v1"
+    api_key_env: "NVIDIA_API_KEY"
+    default_model: "glm-5.1"
+    fallback_models:
+      - "minimax-m2.7"
+      - "mistral-large-3"

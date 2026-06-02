@@ -1,0 +1,18 @@
+enabled: true
+
+selection:
+  mode: "semantic_retrieval_top_k"
+
+budget:
+  max_candidates_per_day: 1600
+  batch_size: 40
+  max_requests_per_day: 40
+  stop_when_budget_exceeded: true
+
+batching:
+  sleep_seconds_between_batches: 2
+
+behavior:
+  overwrite_existing_triage: false
+  require_abstract: true
+  skip_if_missing_abstract: true

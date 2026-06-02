@@ -5,6 +5,7 @@ description = "Local markdown-first dashboard for reading and managing research 
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "certifi>=2026.5.20",
     "pandas>=3.0.3",
     "plotly>=6.7.0",
     "pyyaml>=6.0.3",

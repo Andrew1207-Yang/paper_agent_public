@@ -1,0 +1,16 @@
+high_priority:
+  - emergence
+  - representation learning
+  - mechanistic interpretability
+  - learning dynamics
+  - multimodal learning
+  - data efficiency
+
+medium_priority:
+  - agents
+  - world models
+  - alternative architectures
+
+low_priority:
+  - benchmark
+  - prompt engineering

@@ -1,0 +1,16 @@
+source_scores:
+  clipping: 5
+  manual_pdf: 4
+  arxiv: 2
+  manual: 2
+
+topic_match_scores:
+  high_priority: 3
+  medium_priority: 2
+  low_priority: 1
+
+author_watchlist_score: 3
+
+recency_scores:
+  within_7_days: 2
+  within_30_days: 1

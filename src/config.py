@@ -25,13 +25,15 @@ def parse_args(argv: list[str] | None = None) -> AppConfig:
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--vault_dir")
     parser.add_argument("--paper_subdir")
+    parser.add_argument("--paper_notes_dir")
     parser.add_argument("--recursive", action="store_true")
     parser.add_argument("--debug", action="store_true")
     args, _ = parser.parse_known_args(argv)
+    paper_subdir = args.paper_subdir or args.paper_notes_dir
 
     return AppConfig(
         vault_dir=Path(args.vault_dir).expanduser() if args.vault_dir else None,
-        paper_subdir=args.paper_subdir,
+        paper_subdir=paper_subdir,
         recursive=args.recursive,
         debug=args.debug,
     )

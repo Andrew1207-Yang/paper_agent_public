@@ -1,0 +1,28 @@
+queries:
+  - name: learning_dynamics
+    text: >
+      learning dynamics and emergence in neural networks
+
+  - name: representations
+    text: >
+      representation learning and feature formation
+
+  - name: multimodal
+    text: >
+      multimodal learning under sparse supervision
+
+  - name: interpretability
+    text: >
+      mechanistic interpretability connected to model behavior
+
+  - name: data_quality
+    text: >
+      training data quality and data-constrained learning
+
+  - name: alignment
+    text: >
+      alignment methods grounded in mechanisms rather than anthropomorphism
+
+  - name: capability_emergence
+    text: >
+      understanding capability emergence from training data and optimization

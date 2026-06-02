@@ -1,0 +1,20 @@
+arxiv:
+  enabled: true
+  query_mode: "date_window"
+  categories:
+    - cs.CL
+    - cs.LG
+    - cs.AI
+    - cs.CV
+    - stat.ML
+  lookback_days: 2
+  max_results_per_category: 500
+  max_pages_per_category: 2
+  sort_by: "submittedDate"
+  sort_order: "descending"
+  sleep_seconds_between_queries: 3
+  local_filtering:
+    enabled: true
+    keep_all_before_ranking: true
+  keyword_queries:
+    enabled: false

@@ -1,0 +1,31 @@
+fields:
+  paper_id:
+    type: string
+    required: true
+  semantic_fit:
+    type: integer
+    minimum: 1
+    maximum: 5
+  importance_guess:
+    type: integer
+    minimum: 1
+    maximum: 5
+  research_potential:
+    type: integer
+    minimum: 1
+    maximum: 5
+  conceptual_depth:
+    type: integer
+    minimum: 1
+    maximum: 5
+  decision:
+    type: string
+    allowed:
+      - read_now
+      - skim
+      - read_later
+      - skip
+  triage_confidence:
+    type: integer
+    minimum: 1
+    maximum: 5

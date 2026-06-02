@@ -1,0 +1,37 @@
+embedding_model:
+  provider: nvidia
+  base_url: "https://integrate.api.nvidia.com/v1"
+  api_key_env: "NVIDIA_API_KEY"
+  model: "nvidia/nv-embed-v1"
+  dimension: 4096
+  batch_size: 32
+
+retrieval:
+  top_k_for_triage: 50
+  similarity_metric: cosine
+  selected_for_triage_field: selected_for_triage
+
+author_boost:
+  enabled: true
+  weight: 0.05
+
+category_weights:
+  cs.CL: 1.0
+  cs.LG: 1.0
+  stat.ML: 0.9
+  cs.AI: 0.8
+  cs.CV: 0.6
+
+taste:
+  enabled: true
+  min_positive_examples: 20
+  interest_weight: 0.4
+  taste_weight: 0.6
+  nearest_positive_count: 3
+
+interaction_weights:
+  read: 1.0
+  rating_4: 2.0
+  rating_5: 3.0
+  starred: 2.0
+  clipped: 3.0
