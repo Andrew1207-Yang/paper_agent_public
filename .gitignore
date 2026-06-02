@@ -29,3 +29,6 @@ build/
 dist/
 *.egg-info/
 docs/
+
+data/*
+tmp/*
